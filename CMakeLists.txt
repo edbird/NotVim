@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(SimpleExample)
+project(NotVim)
 
 find_package(PkgConfig REQUIRED)
 
@@ -17,6 +17,7 @@ include_directories(${GTKMM_INCLUDE_DIRS})
 
 message("include:  ${GTKMM_INCLUDE_DIRS}")
 
-add_executable(SimpleExample SimpleExample.cpp)
+#add_executable(SimpleExample SimpleExample.cpp)
+add_executable(notvim main.cpp)
 
-target_link_libraries(SimpleExample ${GTKMM_LIBRARIES})
+target_link_libraries(notvim ${GTKMM_LIBRARIES})
